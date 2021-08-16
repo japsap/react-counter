@@ -9,6 +9,9 @@ export class Counte extends Component {
     incrementSpan(){
         this.setState({ count: this.state.count + 1})
     }
+    decreaseSpan(){
+        this.setState({ count: this.state.count - 1})
+    }
     render() {
         return (
             <div> 
@@ -17,6 +20,11 @@ export class Counte extends Component {
                     className="btn btn-secondary btn-sm"
                     onClick={() => {this.incrementSpan()}}>
                     Increment
+                </button>
+                <button 
+                    className="btn btn-primary m-2 btn-sm"
+                    onClick={() => {this.decreaseSpan()}}>
+                    Decrease
                 </button>
                 <button 
                     className="btn btn-danger m-2 btn-sm"
